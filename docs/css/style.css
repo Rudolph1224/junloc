@@ -1,33 +1,14 @@
 /* style.css */
 .container {
-  width: 100vw;
+  width: 100%;
   height: 100vh;
-  background: #666 url(https://bcrikko.github.io/web-design-practices/single-page-layout/asset/header.jpg) no-repeat;
-  background-size: cover;
-	position: relative;
-	z-index: 0;
 }
 
-.container::before {
-  content: '';
-  position: absolute;
-  /* 輪郭がぼやけてしまうのでブラー範囲を広げる */
-	/*
-  top: -5px;
-  bottom: -5px;
-  left: -5px;
-  right: -5px;
-  background: inherit;
-  filter: blur(5px);
-	*/
-	filter: brightness(10%) blur(50px)
-	z-index:-1;
+header {
+	width: 100%;
+	background:#f9f9f8;
 }
 
-.title {
-  color: white;
-  text-align: center;
-  font-size: 60px;
-  padding-top: calc(100vh / 2 - 60px);
-  text-shadow: 0 0 10px #333;
+ul {
+	display: flex;
 }
